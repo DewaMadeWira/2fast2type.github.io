@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>2Fast2Type</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body
+    class="text-white"
+    style="background-color: #333533; font-family: 'Nunito Sans', sans-serif"
+  >
+    <header
+      class="font-bold flex justify-between p-2 px-4"
+      style="font-size: 20.43px"
+    >
+      <h4>2Fast2Type</h4>
+      <div class="flex w-1/4 justify-around">
+        <a href="">
+          <h5>Home</h5>
+        </a>
+        <a href="">
+          <h5>About</h5>
+        </a>
+      </div>
+    </header>
+    <img class="blob-left" src="Assets/blob.svg" alt="" />
+    <!-- <img class="blob-right" src="Assets/blob.svg" alt="" /> -->
+    <main class="flex flex-col items-center justify-center">
+      <h1 style="font-size: 67px">2Fast2Type</h1>
+      <h3 style="font-size: 37.9px">Timer :</h3>
+      <h3 style="font-size: 37.9px" id="timer">0</h3>
+      <h3 style="font-size: 37.9px">Type Below !</h3>
+      <h2 style="font-size: 50.52px" id="randomWords"></h2>
+      <input type="text" id="input-word" class="w-1/3 h-10 text-black" />
+      <h3 class="mt-4">Score : <span id="score"></span></h3>
+
+      <h3 class="mt-4" style="font-size: 20.9px">Difficulty :</h3>
+      <h3 id="last"></h3>
+      <div
+        class="flex justify-between items-center mt-3"
+        style="font-size: 40.9px; width: 50%"
+      >
+        <button class="difficulty btn btn-border-4" id="easy">Easy</button>
+        <button class="difficulty btn btn-border-4" id="medium">Medium</button>
+        <button class="difficulty btn btn-border-4" id="hard">Hard</button>
+      </div>
+    </main>
+    <img src="Assets/wave (1).svg" alt="" class="svg-footer" />
+
+    <script src="index.js"></script>
+  </body>
+</html>

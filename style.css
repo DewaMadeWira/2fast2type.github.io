@@ -1,0 +1,116 @@
+.svg-footer {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  filter: brightness(0) saturate(100%) invert(7%) sepia(11%) saturate(82%)
+    hue-rotate(321deg) brightness(87%) contrast(86%);
+}
+
+.difficulty {
+  padding: 5px;
+  border-radius: 3px;
+  width: 22%;
+  background: rgb(249, 190, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 190, 32, 1) 5%,
+    rgba(240, 159, 81, 1) 96%
+  );
+  font-weight: bold;
+}
+
+.blob-left {
+  position: absolute;
+  float: none;
+  z-index: -1;
+  left: -20.8%;
+  right: 69.96%;
+  top: 7.2%;
+  bottom: 54.69%;
+  width: 30%;
+  transform: rotate(0.07deg);
+}
+
+.blob-about {
+  position: absolute;
+  float: none;
+  z-index: -1;
+  left: 60.8%;
+
+  top: 7.2%;
+  bottom: 54.69%;
+  width: 30%;
+  transform: rotate(0.07deg);
+}
+
+.blob-right {
+  position: absolute;
+  float: none;
+  z-index: -1;
+  width: 30%;
+  left: 70%;
+  top: 40%;
+  transform: rotate(30deg);
+}
+
+.btn.btn-border-4::after,
+.btn.btn-border-4::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: 0.5s;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 27px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+}
+.btn.btn-border-4::after,
+.btn.btn-border-4::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: 0.5s;
+}
+
+.btn.btn-border-4::after {
+  top: -9px;
+  left: -9px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+.btn.btn-border-4::before {
+  bottom: -9px;
+  right: -9px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.btn.btn-border-4:hover {
+  color: #ffffff;
+}
+
+.btn.btn-border-4:hover::after,
+.btn.btn-border-4:hover::before {
+  border-radius: 4px;
+  width: calc(100% + 1px);
+  height: calc(100% + 1px);
+  border-color: #ffffff;
+}
+.btn:focus {
+  border-radius: 4px;
+  width: calc(30% + 1px);
+}
